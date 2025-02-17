@@ -1,0 +1,104 @@
+ <html>
+<head>
+<title>Hyderabad Gallery</title>
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  font-family: 'Verdana', sans-serif;
+  text-align: center;
+  color: #333;
+  padding: 20px;
+  background-color: #ff6347;
+  margin: 0;
+}
+
+h2 {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nb {
+  background-color: #800000;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nb a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nb a:hover {
+  color: #ff6347;
+}
+
+.aa img {
+  height: 35px;
+  float: left;
+  left: 10px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+hr {
+  border: 1px solid #ccc;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.gallery img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+</style>
+</head>
+<body>
+<h1>Gallery of Hyderabad</h1>
+<hr>
+<div class="nb">
+  <h2>
+    <a href="Home.html" class="aa"><img src="home.png" alt="Home" />Home</a>
+    <a href="Heritage.html">Heritage</a>
+    <a href="HotelBooking.html">Hotel Booking</a>
+    <a href="Gallery.html">Gallery</a>
+  </h2>
+</div>
+<hr>
+<div class="gallery">
+  <img src="p1.png" height="200" alt="Birla Mandir">
+  <img src="p2.jpg" height="200" alt="Golconda Fort">
+  <img src="p3.jpg" height="200" alt="Charminar">
+  <img src="p4.jfif" height="200" alt="Salarjung Museum">
+  <img src="g1.jpg" height="200" alt="Hussain Sagar Lake">
+  <img src="g3.jfif" height="200" alt="Hyderabad Night View">
+  <img src="p.jpg" height="200" alt="Laad Bazaar">
+  <img src="p5.jfif" height="200" width="310" alt="Hussain Sagar">
+</div>
+</body>
+</html>
+

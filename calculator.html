@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .display {
+            grid-column: span 4;
+            padding: 10px;
+            font-size: 2em;
+            text-align: right;
+            background: #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            background: #eee;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #ddd;
+        }
+        .equal {
+            grid-column: span 2;
+            background: #ff8c00;
+            color: white;
+        }
+        .equal:hover {
+            background: #e07b00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <div class="calculator">
+        <div class="display">0</div>
+        <button>7</button><button>8</button><button>9</button><button>/</button>
+        <button>4</button><button>5</button><button>6</button><button>*</button>
+        <button>1</button><button>2</button><button>3</button><button>+</button>
+        <button>0</button><button>.</button><button class="equal">=</button><button>-</button>
+    </div>
+</body>
+</html>
